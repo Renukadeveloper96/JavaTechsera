@@ -1,0 +1,12 @@
+Fibonacci sequence ,also known as Fibonacci numbers,is defined as the sequence of numbers in which each number in the sequence is equal 
+to the sum of two numbers before it.
+
+The sequence is given as:
+
+0,
+1,
+1,
+2,
+3,
+5,
+

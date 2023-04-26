@@ -1,0 +1,103 @@
+Write a program to check eligibility to purchase groceries. Take from console user name , age , gender and use if else to verify.
+
+import java.util.Scanner;
+
+public class GroceryEligibility {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from console
+        Scanner scanner = new Scanner(System.in);
+
+        // Take input from user
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine(); // consume the newline character
+        System.out.print("Enter your gender (M/F/O): ");
+        String gender = scanner.nextLine();
+
+        // Verify eligibility based on age and gender
+        if (age >= 18) {
+            if (gender.equals("M")) {
+                System.out.println("Welcome, Mr. " + name + "! You are eligible to purchase groceries.");
+            } else if (gender.equals("F")) {
+                System.out.println("Welcome, Ms. " + name + "! You are eligible to purchase groceries.");
+            } else if (gender.equals("O")) {
+                System.out.println("Welcome, " + name + "! You are eligible to purchase groceries.");
+            } else {
+                System.out.println("Invalid input for gender. Please enter 'M', 'F', or 'O'.");
+            }
+        } else {
+            System.out.println("Sorry, " + name + ". You are not eligible to purchase groceries.");
+        }
+    }
+}
+
+
+Write a Java program to sum values of an array.
+public class ArraySum {
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 6, 8, 10}; // Example array
+        
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        
+        System.out.println("The sum of the array is: " + sum);
+    }
+}
+
+
+Write a Java program to calculate the average value of array elements in java
+public class ArrayAverage {
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 6, 8, 10}; // Example array
+        
+        double sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        
+        double average = sum / arr.length;
+        
+        System.out.println("The average of the array is: " + average);
+    }
+}
+
+
+Write a Java program to sort a numeric array and a string array
+import java.util.Arrays;
+
+public class SortArraysExample {
+
+  public static void main(String[] args) {
+  
+    // Numeric array
+    int[] numbers = { 10, 5, 8, 1, 7 };
+    
+    // String array
+    String[] strings = { "apple", "orange", "banana", "kiwi", "pear" };
+    
+    // Sort numeric array in ascending order
+    Arrays.sort(numbers);
+    
+    // Sort string array in ascending order
+    Arrays.sort(strings);
+    
+    // Print sorted numeric array
+    System.out.println("Sorted numeric array:");
+    for (int i = 0; i < numbers.length; i++) {
+      System.out.print(numbers[i] + " ");
+    }
+    System.out.println();
+    
+    // Print sorted string array
+    System.out.println("Sorted string array:");
+    for (int i = 0; i < strings.length; i++) {
+      System.out.print(strings[i] + " ");
+    }
+    System.out.println();
+  }
+
+}

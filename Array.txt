@@ -1,0 +1,110 @@
+public class DisplayOddFor {
+
+	public static void main(String[] args) {
+	
+		int number=100;
+		System.out.println("List of odd numbers from 1 to "+number);
+		for(int i=1;i<=number;i++) {
+			
+			if(i%2!=0) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
+
+public class DisplayOddNumbers {
+
+	public static void main(String[] args) {
+		
+		System.out.println("enter any number");
+	    int number ,i;
+	    Scanner sc=new Scanner(System.in);
+	    number =sc.nextInt();
+
+	    i=1;
+	    System.out.println("list of odd numbers");
+	    while(i<=number) {
+	    	System.out.println(i);
+	    	i=i+2;
+	    }
+	}
+
+}
+
+Array is collection of similar type of elements which has contiguous memory location
+
+Array is fixed size
+Array is homogenious and hetrogenious .
+
+Array is an object which contains elements of a similar data type.
+The elements of an array are stored in memory location.
+we can store only fixed set of elements in a java array
+
+advantages:
+random access
+code optimization
+
+
+disadvantages:
+size limit
+
+Type of array
+1.single Dimensional array
+2.multidemensional array
+
+
+syntax of single Dimensional array
+datatype[] arr;
+datatype arr[];
+
+public class ArrayExample {
+
+	public static void main(String[] args) {
+	//datatype[] arr=new dataype[size];
+		int a[]=new int[5];
+//		a[0]=10;
+		a[1]=20;
+		a[2]=30;
+		a[3]=40;
+//		a[4]=50;
+//		a[5]=60;
+
+		System.out.println(a[4]);
+	}
+
+}
+
+public class SingleDimArray2 {
+
+	public static void main(String[] args) {
+		
+//		int arr[]=new int[5];
+//		arr[0]=1;
+//		arr[1]=2;
+//		arr[2]=3;
+//		arr[3]=4;
+//		arr[4]=5;
+		int arr[]= {1,2,3,4,5};
+		
+		for(int number:arr ) {
+			System.out.println(number);
+		}
+	}
+
+}
+
+public class SingleDimeArray {
+
+	public static void main(String[] args) {
+		//int a[]= new int[5];
+		int a[]= {10,20,30,40,50};
+		for(int i=0;i>a.length;i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}

@@ -1,0 +1,550 @@
+Java is class based object oriented programming language
+First version of (jdk 1.0).It was introduced on 23rd jan 1996 by microsystem.
+
+syntax:
+class class_name{
+    public static void main(String args[]){
+        System.out.println("hello world !");
+    }
+}
+
+public:is an acess specifier that declared the main method()as unprotected .this is similar to c++ public modifier
+
+void:does not return any value.
+
+
+controll statements 
+The statements in the code are executed according to the order in which they appear,however,java provides stmts that can be used to 
+control th flow of java code.such statements are control statments.
+
+Three types of control statements
+1)Decision making statements
+2)Loop statements
+3)Jump statements
+
+1)Decision making statements
+a)if statements
+syntax:
+
+4 types
+1)simple if -statements
+
+syntax:
+if(cond){
+    //statements 1;
+}
+int a=10;
+int b=20;
+if(a>b){
+    sysout("false")
+}
+2)if-else statements
+syntax:
+if(cond){
+    //statements 1;
+}else{
+      //statements 2;
+}
+
+3)if else if
+syntax:
+if(cond1){
+    //stmt1
+}else if(cond2){
+      //stmt2
+}else if(cond3){
+     //stmt3
+}else{
+    //stmt n;
+}
+
+
+
+4)nested if
+
+if(cond){
+
+    if(cond1){
+        //stmt1
+    }else if(cond2){
+          //stmt2
+    }else{
+        //stmt n;
+    }
+}
+else{
+//stmt n
+}
+
+
+b)switch statements
+1)cases cannot be duplicate
+2)default statments is executed when any of the case does'nt match the value of expression
+
+syntax:
+Switch(expression){
+    case value1:
+    stmt 1;
+    break;
+
+    case valueN:
+    stmt n;
+    break;
+    default:
+    default stmt;
+}
+
+2)Loop Statements
+a)do while
+b)while loop
+c)for loop
+d)for each loop
+
+for loop 
+syntax:
+for(initialization;condition;increment/decrement){
+    //block of stmt;
+}
+
+forEach
+syntax:
+for(datatype var;arrayname/collection_name){
+    //stmts;
+}
+
+While
+condition is checked at the start of the loop.if the condition is true,then the loop body will be executed;otherwise the stmts 
+after loop will be executed 
+
+syntax:
+while(condition){
+    //stmts
+}
+
+package sample;
+
+public class IfElseIf {
+
+	public static void main(String[] args) {
+		int x=10;
+		int y=20;
+		
+		if(x+y>100) {//true
+			System.out.println("x+y is greater than 100");
+		}
+		else if(x+y>80) {//false
+			System.out.println(" x+y is less than 80");
+		}
+		else if(x+y>120) {
+			System.out.println(" x+y is greater than 120");
+		}
+		else {
+			System.out.println("none of the above condition is not true");
+		}
+		}
+	}
+
+    package sample;
+
+public class IfExample {
+
+	public static void main(String[] args) {
+		int a=30;
+		int b=20;
+		if(b>a){
+		    System.out.println("b is greater than a");
+		}else {
+			System.out.println("false");
+		}
+
+	}
+
+}
+
+package sample;
+
+public class NestedIf {
+
+	public static void main(String[] args) {
+	
+		int x=10;
+		int y=20;
+		
+		if(x+y>100) {
+			
+			
+		if(x+y>100) {//false
+			System.out.println("x+y is greater than 10");
+		}
+		        //30>80//false
+		else if(x+y>4) {//true
+			System.out.println(" x+y is less than 4");
+		}
+		        //30>20
+		else if(x+y>=20) {
+			System.out.println(" x+y is greater than 20");
+			
+		}else {
+			System.out.println("none of the above condition is not true");
+		}
+		}
+		else {
+			System.out.println("none of the above condition");
+		}
+
+	}
+
+}
+
+package sample;
+
+public class Sample1 {
+	
+	void m1() {
+		System.out.println("welcome");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("hello world !");
+		Sample1  sample=new Sample1();
+		sample.m1();
+	}
+	
+	//access modifier :private protected public default
+	
+
+}
+package sample;
+
+public class Sample2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+package Loop;
+
+public class ForEach {
+
+	public static void main(String[] args) {
+		int[] n1= {0,1,2,3};
+		for(int number:n1) {
+			System.out.println(number);
+		}
+	}
+
+}
+package Loop;
+
+public class Forloop {
+
+	public static void main(String[] args) {
+	
+		int sum=0;
+		for(int i=1;i<=3;i++) {
+//			System.out.println(i);
+			sum=sum+i;
+		}
+		System.out.println("the sum of first 3 natural number is"+ sum);
+	}
+	
+
+}
+package Loop;
+
+public class While {
+
+	public static void main(String[] args) {
+	
+		int i=1;
+	System.out.println("printing the list of first 10 odd number");
+	while(i<=10) {
+		System.out.println(i);
+		i=i+2;
+	}
+	}
+}
+
+
+do-while 
+The do-while loop checks the condition at the end of the loop after excecuting loop statements.When the number of iteration 
+is not known and we have to execute the loop once,we can use do-while loop
+
+It is also known as the exit-controlled loop  since the condition is not checked in advance.
+
+
+
+syntax:
+do{
+	//stmt;
+}while(condition)
+
+Example:
+public class DoWhile {
+
+	public static void main(String[] args) {
+	
+		int i=0;
+		System.out.println("numbers:");
+		do {
+			System.out.println("numbers:"+i);
+			i=i+4;
+		}while(i<=10);
+	}
+
+}
+
+jump statement:
+ break 
+ continue;
+
+ public class BreakExample {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=10;i++) {
+		System.out.println(i);
+		if(i==9) {
+			break;//or continue;
+		}
+		}
+
+	}
+
+}
+
+public class LoopFor {
+
+	public static void main(String[] args) {
+		
+		int sum=0;
+		for(int j=2;j<=5;j++) {
+			sum=sum+j;
+		}
+		System.out.println("the sum of first 10 natural numbers is :"+sum);
+
+	}
+
+}
+public class While {
+
+	public static void main(String[] args) {
+	
+		int i=1;
+	System.out.println("printing the list of first 10 odd number");
+	while(i<=10) {
+		System.out.println(i);
+		i=i+2;
+	}
+	}
+
+}
+
+
+Assignment
+package assignment;
+
+public class Student {
+
+	public static void main(String[] args) {
+		int x=10;
+		int y=70;
+		int z=10;
+		if(x+y+z>20) {
+		if((x+y>20)&&(y+z>500)) {//false
+			System.out.println("true");
+		}else if(y+z>20){
+			System.out.println("x+y is greater than 20");
+		}else if(x+z>30) {
+			System.out.println("x+z is less than 600");
+		}else {
+			System.out.println("none of the above condition is not true");
+		}
+		}
+		else {
+			System.out.println("none");
+		}
+	}
+}
+
+public class Student1 {
+
+	public static void main(String[] args) {
+		String city="hydrabad";
+		if(city=="DeHhi") {
+			System.out.println("city is delhi");
+		}else if(city=="hydrabad") {
+			System.out.println("city is hydrabad");
+		}else if(city=="agra") {
+			System.out.println("city is agra");
+		}else {
+			 System.out.println(city);
+		}
+	}
+
+}
+
+public class SwitchExample {
+
+	public static void main(String[] args) {
+		int num=7;
+		switch(num) {
+		case 0:
+			System.out.println("number is 0");
+			break;
+			
+		case 1:
+			System.out.println("number is 1");
+			break;
+			
+		case 2:
+			System.out.println("number is 2");
+			break;
+			
+			default:
+				System.out.println(num);
+		}
+		
+
+	}
+
+}
+
+public class While {
+
+	public static void main(String[] args) {
+		
+		int i=0;
+		System.out.println("printing the list of first natural numbers");
+		while(i<=10) {
+			System.out.println(i);
+			i=i+1;
+		}
+	}
+
+}
+
+public class DisplayOddFor {
+
+	public static void main(String[] args) {
+	
+		int number=100;
+		System.out.println("List of odd numbers from 1 to "+number);
+		for(int i=1;i<=number;i++) {
+			
+			if(i%2!=0) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
+
+public class DisplayOddNumbers {
+
+	public static void main(String[] args) {
+		
+		System.out.println("enter any number");
+	    int number ,i;
+	    Scanner sc=new Scanner(System.in);
+	    number =sc.nextInt();
+
+	    i=1;
+	    System.out.println("list of odd numbers");
+	    while(i<=number) {
+	    	System.out.println(i);
+	    	i=i+2;
+	    }
+	}
+
+}
+
+Array is collection of similar type of elements which has contiguous memory location
+
+Array is fixed size
+Array is homogenious and hetrogenious .
+
+Array is an object which contains elements of a similar data type.
+The elements of an array are stored in memory location.
+we can store only fixed set of elements in a java array
+
+advantages:
+random access
+code optimization
+
+
+disadvantages:
+size limit
+
+Type of array
+1.single Dimensional array
+2.multidemensional array
+
+
+syntax of single Dimensional array
+datatype[] arr;
+datatype arr[];
+
+public class ArrayExample {
+
+	public static void main(String[] args) {
+	//datatype[] arr=new dataype[size];
+		int a[]=new int[5];
+//		a[0]=10;
+		a[1]=20;
+		a[2]=30;
+		a[3]=40;
+//		a[4]=50;
+//		a[5]=60;
+
+		System.out.println(a[4]);
+	}
+
+}
+
+public class SingleDimArray2 {
+
+	public static void main(String[] args) {
+		
+//		int arr[]=new int[5];
+//		arr[0]=1;
+//		arr[1]=2;
+//		arr[2]=3;
+//		arr[3]=4;
+//		arr[4]=5;
+		int arr[]= {1,2,3,4,5};
+		
+		for(int number:arr ) {
+			System.out.println(number);
+		}
+	}
+
+}
+
+public class SingleDimeArray {
+
+	public static void main(String[] args) {
+		//int a[]= new int[5];
+		int a[]= {10,20,30,40,50};
+		for(int i=0;i>a.length;i++) {
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+
+Multidemensional Arrays
+A Multidemensional Arrays is an array of arrays.
+
+Multidemensional Arrays are useful when you want to store data as a tabular form,like a table with rows and columns.
+
+To create a two-demensional array,add each array within its own set of curly braces.
+
+ex:
+datatype[][]myNumbers ={{1,2,3,4},{5,6,7}};
+
+
