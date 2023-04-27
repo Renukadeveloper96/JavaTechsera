@@ -74,4 +74,49 @@ Working with Git Bash
 
 ->Right click on Mouse and choose "Open Git Bash Here"
 
-git help:
+git help:It will display frequently used git commands
+
+git help <cmd-name>:It will open documentation for given command
+
+========Configure Your Email and Name in Git Bash With Commands==========
+$git config --global user.email "Youremail@yourdomain.com"
+
+$git config --global user.name "name"
+
+Note:email and name we will configure only for first time
+
+$ git init:To initialize our folder as git working tree folder
+
+$git clone :To clone git repository to our machine from github.com
+
+syntax:
+$git clone <Project repo-url>
+
+git status:It will display staged,un-staged and un-tracked files.
+
+syntax:$ git status
+
+Staged files:the files which are added for commit
+un-staged files:the files which are modified but not added to commit
+
+un-tracked files:Newly created files
+
+Notes:To commit a files(S),we should add to staging area first
+
+$git add .
+It is used to add file (s) to staging area
+
+git commit:it is used to commit staged files to git local repository
+
+syntax:
+$git commit -m 'reason-for commit'
+
+$git push:To push changes from git local repository to git central repository
+syntax:$ git push 
+
+$git rm:To remove file(s)from repository
+
+
+
+
+
