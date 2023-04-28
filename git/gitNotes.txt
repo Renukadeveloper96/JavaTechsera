@@ -116,6 +116,73 @@ syntax:$ git push
 
 $git rm:To remove file(s)from repository
 
+==================================================
+Steps to push code to github central repository
+==================================================
+
+1) Create one public repository in git hub (take github repo url)
+
+2) Clone github repository using 'git clone' command
+
+		$ git clone 'repo-url'
+
+3) Navigate to repository folder
+
+4) Create one file in repository folder
+
+		$ touch Demo.java
+
+5) Check status of the file using 'git status' command
+
+		$ git status (It will display as untracked file)
+
+6) Add file to staging area using 'git add' command
+
+		$ git add .
+
+7) Commit file to git local repository
+
+		$ git commit -m 'commit-msg'
+
+8) Push file from git local repository to git central repository using 'git push' command
+
+		$ git push
+
+Note: If you are doing 'git push' for first time it will ask to enter your github account password.
+
+
+------------------------------------------------------------------------------------------------------------------
+Note: Git bash will ask our password only for first time. It will save our git credentials in Credential Manager in Windows machine.
+
+-> Go to Credential Manager -> Windows Credentials -> Select Github -> We can modify and delete saved credentials from here
+------------------------------------------------------------------------------------------------------------------
+
+-> When we do git commit then it will geneate a commit-id with 40 characters length
+
+-> From this commit-id it will display first 7 characters in git hub central repository
+
+-> We can check commit history using 'git log' command
+
+==================================================
+Steps to commit Maven Project to Github Repository
+==================================================
+
+1) Create Maven Project
+
+2) Create GitHub Repository
+
+Note: After creating git repository, it will display set of commands to execute
+
+3) Open gitbash from project folder and execute below commands
+
+$ git init
+$ git add .
+$ git commit -m 'commit-msg'
+$ git branch -M main
+$ git remote add origin <repo-url>
+$ git push -u origin master
+
+
 
 
 
