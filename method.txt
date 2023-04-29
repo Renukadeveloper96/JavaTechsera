@@ -1,0 +1,37 @@
+
+what is class?
+class is nothing but collection of object
+Access Modifiers/Access specifier: 
+A class can be public or has default access.
+
+syntax:
+<access specifier> class class_name   
+{  
+// member variables   
+// class methods   
+}  
+
+what is object:
+
+An object is a real-world entity.
+An object is a runtime entity.
+The object is an entity which has state and behavior.
+The object is an instance of a class.
+
+what is method?
+a method is collection of statements or a set of code 
+grouped together to perform a certain task or Operations
+this is a block of code
+
+Advantages:
+It is used to reusability of code.
+We do not require to write code again and again.
+we write a method once and use it many times.
+its easy modification and readability.
+
+Method Declaration
+method Declaration provides information about method 
+attribute,such as visibility,return-type,name,arguments
+
+
+
